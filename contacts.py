@@ -55,3 +55,39 @@ def add_contact(contacts):
     full_name.append(last_name)
     contacts.append(full_name)
     return contacts
+
+def modify_contact(contacts):
+    """
+    Modifys the first and last name of an index in 'contacts'.
+
+    Paramters:
+    contacts (2D list): Tuffy Titan's contacts list.
+
+    Methods:
+    append():
+        Appends 'first_name' to the 'full_name' list.
+    append():
+        Appends 'last_name' to the 'full_name' list.
+    append():
+        Modifys 'contacts' list with the 'full_name' list at the
+        specified index,'index_modifier'.
+
+    Returns:
+        2D list: Updated 'contacts' list.
+
+    Example:
+    >>> modify_contact(contacts)
+    contacts
+    """
+    index_modifier = input("What index do you want to modify? ")
+    if index_modifier >= min(contacts) and index_modifier <= max(contacts):
+        first_name = input("Provide your first name: ")
+        last_name = input("Provide your last name: ")
+        full_name = []
+        full_name.append(first_name)
+        full_name.append(last_name)
+        contacts[index_modifier].append(full_name)
+        return contacts
+    else:
+        print("Invalid index number.")
+        return contacts
