@@ -8,3 +8,5 @@ from contacts import *
 contacts = []
 # Create boolean variable to use in while loop
 quit = False
+
+while quit != True:
