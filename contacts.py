@@ -91,3 +91,29 @@ def modify_contact(contacts):
     else:
         print("Invalid index number.")
         return contacts
+
+def delete_contact(contacts):
+    """
+    Deletes element at the desired index from 'contacts'.
+
+    Paramters:
+    contacts (2D list): Tuffy Titan's contacts list.
+
+    Statements:
+    del:
+        Deletes element at desired index in 'contacts'.
+
+    Returns:
+        2D list: Updated 'contacts' list.
+
+    Example:
+    >>> delete_contact(contacts)
+    contacts
+    """
+    index_modifier = input("What index do you want to delete? ")
+    if index_modifier >= min(contacts) and index_modifier <= max(contacts):
+        del contacts[index_modifier]
+        return contacts
+    else:
+        print("Invalid index number.")
+        return contacts
