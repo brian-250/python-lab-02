@@ -6,3 +6,5 @@ from contacts import *
 
 # Create 2D contacts list variabale
 contacts = []
+# Create boolean variable to use in for loop
+quit = False
