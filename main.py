@@ -10,3 +10,9 @@ contacts = []
 quit = False
 
 while quit != True:
+        print("""           *** TUFFY TITAN CONTACT MAIN MENU
+             1. Print list
+             2. Add contact
+             3. Modify contact
+             4. Delete contact
+             5. Exit the program""")
