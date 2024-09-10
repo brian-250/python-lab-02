@@ -21,8 +21,8 @@ def print_list(contacts):
     """
     print("------------TUFFY TITAN'S CONTACTS LIST-------------")
     print("#-------First Name------------Last Name-------------")
-    for i in contacts:
-        print(f'{str(i):8}{contacts[i][0]:22}{contacts[i][1]:22}')
+    for index in range(len(contacts)):
+        print(f'{str(index):8}{contacts[index][0]:22}{contacts[index][1]:22}')
 
 def add_contact(contacts):
     """
