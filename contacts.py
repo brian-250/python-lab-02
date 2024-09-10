@@ -21,8 +21,8 @@ def print_list(contacts):
     """
     print("------------TUFFY TITAN'S CONTACTS LIST-------------")
     print("#-------First Name------------Last Name-------------")
-    for i in contacts:
-        print(f'{str(i):8}{contacts[i][0]:22}{contacts[i][1]:22}')
+    for index in range(len(contacts)):
+        print(f'{str(index):8}{contacts[index][0]:22}{contacts[index][1]:22}')
 
 def add_contact(contacts):
     """
@@ -77,14 +77,14 @@ def modify_contact(contacts):
     >>> modify_contact(contacts)
     contacts
     """
-    index_modifier = input("What index do you want to modify? ")
-    if index_modifier >= min(contacts) and index_modifier <= max(contacts):
+    index_modifier = int(input("What index do you want to modify? "))
+    if index_modifier >= 0 and index_modifier < len(contacts):
         first_name = input("Provide your first name: ")
         last_name = input("Provide your last name: ")
         full_name = []
         full_name.append(first_name)
         full_name.append(last_name)
-        contacts[index_modifier].append(full_name)
+        contacts[index_modifier] = full_name
         return contacts
     else:
         print("Invalid index number.")
@@ -108,8 +108,8 @@ def delete_contact(contacts):
     >>> delete_contact(contacts)
     contacts
     """
-    index_modifier = input("What index do you want to delete? ")
-    if index_modifier >= min(contacts) and index_modifier <= max(contacts):
+    index_modifier = int(input("What index do you want to delete? "))
+    if index_modifier >= 0 and index_modifier < len(contacts):
         del contacts[index_modifier]
         return contacts
     else:
