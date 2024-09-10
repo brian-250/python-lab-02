@@ -78,7 +78,7 @@ def modify_contact(contacts):
     contacts
     """
     index_modifier = int(input("What index do you want to modify? "))
-    index_modifier - 1
+    index_modifier = index_modifier - 1
     if index_modifier >= 0 and index_modifier < len(contacts):
         first_name = input("Provide your first name: ")
         last_name = input("Provide your last name: ")
@@ -110,7 +110,7 @@ def delete_contact(contacts):
     contacts
     """
     index_modifier = int(input("What index do you want to delete? "))
-    index_modifier - 1
+    index_modifier = index_modifier - 1
     if index_modifier >= 0 and index_modifier < len(contacts):
         del contacts[index_modifier]
         return contacts
