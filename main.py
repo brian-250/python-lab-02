@@ -16,7 +16,7 @@ while quit != True:
              3. Modify contact
              4. Delete contact
              5. Exit the program""")
-        choice = input("Enter menu choice: ")
+        choice = int(input("Enter menu choice: "))
 
         if choice == 1:
                 contacts = print_list(contacts)
