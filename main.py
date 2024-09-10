@@ -27,4 +27,4 @@ while quit != True:
         elif choice == 4:
                 contacts = delete_contact(contacts)
         elif choice == 5:
-                contacts = modify_contact(contacts)
+                quit = True
