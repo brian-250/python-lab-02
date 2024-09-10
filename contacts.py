@@ -108,7 +108,7 @@ def delete_contact(contacts):
     >>> delete_contact(contacts)
     contacts
     """
-    index_modifier = input("What index do you want to delete? ")
+    index_modifier = int(input("What index do you want to delete? "))
     if index_modifier >= min(contacts) and index_modifier <= max(contacts):
         del contacts[index_modifier]
         return contacts
