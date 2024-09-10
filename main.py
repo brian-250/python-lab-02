@@ -17,3 +17,14 @@ while quit != True:
              4. Delete contact
              5. Exit the program""")
         choice = input("Enter menu choice: ")
+
+        if choice == 1:
+                contacts = print_list(contacts)
+        elif choice == 2:
+                contacts = add_contact(contacts)
+        elif choice == 3:
+                contacts = modify_contact(contacts)
+        elif choice == 4:
+                contacts = delete_contact(contacts)
+        elif choice == 5:
+                contacts = modify_contact(contacts)
