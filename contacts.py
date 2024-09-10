@@ -84,7 +84,7 @@ def modify_contact(contacts):
         full_name = []
         full_name.append(first_name)
         full_name.append(last_name)
-        contacts[index_modifier].append(full_name)
+        contacts[index_modifier] = full_name
         return contacts
     else:
         print("Invalid index number.")
