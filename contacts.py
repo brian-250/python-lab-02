@@ -113,7 +113,6 @@ def delete_contact(contacts):
     index_modifier = index_modifier - 1
     if index_modifier >= 0 and index_modifier < len(contacts):
         del contacts[index_modifier]
-        return contacts
     else:
         print("Invalid index number.")
-        return contacts
+    return contacts
