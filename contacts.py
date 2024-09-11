@@ -23,6 +23,7 @@ def print_list(contacts):
     print("#-------First Name------------Last Name-------------")
     for index in range(len(contacts)):
         print(f'{str(index):8}{contacts[index][0]:22}{contacts[index][1]:22}')
+    return contacts
 
 def add_contact(contacts):
     """
